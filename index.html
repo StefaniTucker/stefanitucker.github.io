@@ -4,6 +4,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Computer Science ePortfolio</title>
+
+  <title>CS 499 | Computer Science ePortfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #080808;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 30px;
+    }
+
+    .logo {
+      color: #9670f5;
+      font-size: 28px;
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 80px;
+    }
+
+    .heading {
+      margin-bottom: 45px;
+    }
+
+    .heading h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .heading p {
+      color: #a5a5a5;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .portfolio-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px;
+      background-color: #141414;
+      border: 1px solid #30234e;
+      border-radius: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .portfolio-button:hover {
+      border-color: #9670f5;
+      background-color: #1d1730;
+      color: #b99aff;
+      transform: translateY(-3px);
+    }
+
+    .arrow {
+      color: #9670f5;
+      font-size: 22px;
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        padding: 50px 20px;
+      }
+
+      .logo {
+        margin-bottom: 55px;
+      }
+
+      .heading h1 {
+        font-size: 32px;
+      }
+
+      .button-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
+<body>
+
+  <main class="container">
+
+    <div class="logo">CS 499</div>
+
+    <section class="heading">
+      <h1>Computer Science ePortfolio</h1>
+      <p>
+        Welcome to my Computer Science capstone portfolio.
+        Explore my work and enhancements below.
+      </p>
+    </section>
+
+    <section class="button-grid">
+
+      <a href="self-assessment.html" class="portfolio-button">
+        Professional Self-Assessment
+        <span class="arrow">↗</span>
+      </a>
+
+      <a href="code-review.html" class="portfolio-button">
+        Code Review
+        <span class="arrow">↗</span>
+      </a>
+
+      <a href="software-engineering.html" class="portfolio-button">
+        Software Engineering & Design
+        <span class="arrow">↗</span>
+      </a>
+
+      <a href="algorithms.html" class="portfolio-button">
+        Algorithms & Data Structures
+        <span class="arrow">↗</span>
+      </a>
+
+      <a href="databases.html" class="portfolio-button">
+        Databases
+        <span class="arrow">↗</span>
+      </a>
+
+    </section>
+
+  </main>
+
+</body>
 </html>
